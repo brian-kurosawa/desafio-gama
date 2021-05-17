@@ -36,6 +36,16 @@ function ocultaErro(campo) {
     }
 }
 
+function validaCep(campo) {
+    let valor = document.getElementById(campo).value;
+    if(valor.length > 0 && valor.length != 8 && valor.match(/\D+/)) {
+        mostraErro(campo, "CEP inválido");
+    }
+    else {
+        ocultaErro(campo);
+    }
+}
+
 function validaTelefone(campo) {
     let valor = document.getElementById(campo).value;
     if(valor.length != 0 && (valor.match(/\D+/) || valor.length < 11)) {

@@ -37,7 +37,7 @@
         <label for="estado">Estado</label>
         <input type="text" id="estado">
         <label for="cep">CEP</label>
-        <input type="text" id="cep" maxlength="8">
+        <input type="text" id="cep" maxlength="8" oninput="validaCep('cep')">
         <div id="erro_cep" role="alert" style="display: none"></div>
         <label for="telefone_celular">Telefone celular</label>
         <input type="text" id="telefone_celular" maxlength="11" oninput="validaTelefone('telefone_celular')">
