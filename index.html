@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
     <title>Desafio gama</title>
 </head>
-<body>
+<body onload="inicia()">
     <h1>Cadastro pessoal</h1>
     <p>Utilize o formulário abaixo para efetuar o seu cadastro.</p>
     <br>
@@ -39,10 +40,10 @@
         <input type="text" id="cep" maxlength="8">
         <div id="erro_cep" role="alert" style="display: none"></div>
         <label for="telefone_celular">Telefone celular</label>
-        <input type="tel" id="telefone_celular" maxlength="11">
-        <div id="erro_telefone_celular" role="alert" display="style: none;"></div>
+        <input type="text" id="telefone_celular" maxlength="11" oninput="validaTelefone('telefone_celular')">
+        <div id="erro_telefone_celular" role="alert" style="display: none;"></div>
         <label for="telefone_fixo">Telefone fixo</label>
-        <input type="tel" id="telefone_fixo" maxlength="11">
+        <input type="text" id="telefone_fixo" maxlength="11" oninput="validaTelefone('telefone_fixo')">
         <div id="erro_telefone_fixo" role="alert" style="display: none;"></div>
         <label for="enviar">Enviar</label>
         <input type="submit" id="enviar">
