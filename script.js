@@ -104,3 +104,13 @@ function testaCpf(cpf) {
     }
     return true;
 }
+
+function validaRg(campo) {
+    let valor = document.getElementById(campo).value;
+    if(valor.match(/\D+/)) {
+        mostraErro(campo, "RG inválido");
+    }
+    else {
+        ocultaErro(campo);
+    }
+}
