@@ -27,3 +27,4 @@ Para validar os números de telefone, CEP e RG, uma expressão regular foi utili
 * [JavaScript and HTML DOM Reference - W3Schools](https://www.w3schools.com/JSREF/DEFAULT.ASP)
 * Algoritmo para validar CPF do curso da Gama
 * [Sintaxe básica de escrita e formatação no GitHub - GitHub Docs](https://docs.github.com/pt/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+* [Quantifiers +, *, ? and {n}](https://javascript.info/regexp-quantifiers)
