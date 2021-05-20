@@ -20,4 +20,4 @@ Cada erro será exibido em seus respectivos divs. Para facilitar sua exibição,
 
 As funções mostraErro e ocultaErro são responsáveis por controlar tanto os divs associadas aos campos quanto a lista de erros. Esta lista é responsável por modificar a disponibilidade do botão enviar. Apesar de redundante, vale ressaltar que para cada erro novo de validação, este será adicionado ao array erros se ainda não estiver lá. O efeito inverso será aplicado caso o erro for eliminado. Sendo assim, o array terá o id do campo respectivo ao erro removido se a validação retornar um valor verdadeiro.
 
-Para validar os números de telefone, uma expressão regular foi utilizada. Já para validar o cpf, um algoritmo completo foi utilizado.
+Para validar os números de telefone, CEP e RG, uma expressão regular foi utilizada. Esta tenta verificar se existem caracteres não numéricos, e mostra erro se esta afirmação for verdadeira. Já para validar o cpf, um algoritmo completo foi utilizado.
